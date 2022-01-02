@@ -13,12 +13,5 @@ export class EgitimComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @Input() parentdata = "";
-
-  //EgitimSatiri:string = "";
-
-  egitimKaydet(data1:string,data2:string,data3:string){
-    this.parentdata = data1 + '' + data2 + '' +data3;
-  }
-
+  @Input() egitim : any = {};
 }

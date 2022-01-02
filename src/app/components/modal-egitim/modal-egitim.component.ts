@@ -8,19 +8,20 @@ import { Component,EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class ModalEgitimComponent implements OnInit {
 
-  enteroname:string ="";
-  enterdname:string ="";
-  enterbname:string ="";
+  enterOkulAdi:string ="";
+  enterDerece:string ="";
+  enterBolum:string ="";
   constructor() { }
 
   ngOnInit(): void {
 
   }  
 
-  @Output() EgitimEvent = new EventEmitter<string>();
+  @Output() EgitimEvent = new EventEmitter<any>();
 
-  egitimKaydet(enteroname:string,enterdname:string,enterbname:string){
-    this.EgitimEvent.emit();
+  egitimKaydet(enterOkulAdi:string,enterDerece:string,enterBolum:string){
+    let egitimSatiri = {okul:enterOkulAdi, derece: enterDerece, bolum:enterBolum};
+    this.EgitimEvent.emit(egitimSatiri);
   }
 
 }

@@ -38,10 +38,10 @@
 
                   <br>
 
-                  <app-egitim></app-egitim>
+                  <app-egitim [egitim] = "egitim"></app-egitim>
 
                   <!-- Modal -->
-                  <app-modal-egitim></app-modal-egitim>
+                  <app-modal-egitim (EgitimEvent)="egitimEkle($event)"></app-modal-egitim>
 
 
                   <br>

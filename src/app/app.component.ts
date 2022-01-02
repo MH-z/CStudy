@@ -12,11 +12,17 @@ export class AppComponent {
 
   deneyim="";
 
+  egitim="";
+
   onHakkindaUpdate(data:any){
     this.hakkinda=data;
   }
 
   deneyimEkle(data:any){
     this.deneyim = data;
+  }
+
+  egitimEkle(data:any){
+    this.egitim = data;
   }
 }

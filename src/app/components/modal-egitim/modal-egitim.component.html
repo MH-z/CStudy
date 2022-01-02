@@ -8,15 +8,15 @@
         <div class="modal-body">
           <form>
             <label for="fname">Okul:</label><br>
-            <input type="text" #oname name="oname" [(ngModel)]="enteroname"><br><br>
+            <input type="text" #oname name="oname" [(ngModel)]="enterOkulAdi"><br><br>
             <label for="lname">Derece:</label><br>
-            <input type="text" #dname name="dname" [(ngModel)]="enterdname"><br><br>
+            <input type="text" #dname name="dname" [(ngModel)]="enterDerece"><br><br>
             <label for="cname">Bölüm:</label><br>
-            <input type="text" #bname name="bname" [(ngModel)]="enterbname"><br><br>
+            <input type="text" #bname name="bname" [(ngModel)]="enterBolum"><br><br>
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="egitimKaydet(enteroname,enterdname,enterbname)" >Kaydet</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="egitimKaydet(enterOkulAdi,enterDerece,enterBolum)" >Kaydet</button>
         </div>
       </div>
     </div>
