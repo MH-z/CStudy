@@ -1,0 +1,23 @@
+<div class="modal fade" id="Egitim" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Eğitim Ekle</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label for="fname">Okul:</label><br>
+            <input type="text" #oname name="oname" [(ngModel)]="enteroname"><br><br>
+            <label for="lname">Derece:</label><br>
+            <input type="text" #dname name="dname" [(ngModel)]="enterdname"><br><br>
+            <label for="cname">Bölüm:</label><br>
+            <input type="text" #bname name="bname" [(ngModel)]="enterbname"><br><br>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="egitimKaydet(enteroname,enterdname,enterbname)" >Kaydet</button>
+        </div>
+      </div>
+    </div>
+  </div>

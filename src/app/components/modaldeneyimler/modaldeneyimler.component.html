@@ -1,0 +1,23 @@
+<div class="modal fade" id="Ekle1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Deneyim Ekle</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label for="fname">Başlık:</label><br>
+            <input type="text" id="fname" name="fname" [(ngModel)]="enterFirma"><br><br>
+            <label for="lname">Şirket Adı:</label><br>
+            <input type="text" id="lname" name="lname" [(ngModel)] ="enterSirket"><br><br>
+            <label for="cname">Konum:</label><br>
+            <input type="text" id="cname" name="cname" [(ngModel)]="enterKonum"><br><br>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" (click)="saveDeneyim(enterFirma,enterSirket,enterKonum)" data-bs-dismiss="modal" >Kaydet</button>
+        </div>
+      </div>
+    </div>
+  </div>
